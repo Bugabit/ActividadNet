@@ -12,6 +12,9 @@ User u4 = new User(4, "Javi");
 
 List<User> users = new List<User>();
 users.Add(u1);
+users.Add(u2);
+users.Add(u3);
+users.Add(u4);
 
 bootcamp.users = users;
 
