@@ -2,20 +2,12 @@
 {
     public class Bootcamp
     {
-        private int id { get; set; }
-        private List<User> users { get; set; }
+        public int id;
+        public List<User> users;
 
-        public Bootcamp(int id) { 
-            this.id = id;
-        }
-
-        public void AddUser(User user) {
-            this.users.Add(user);
-        }
-
-        public List<User> getUsers() 
+        public Bootcamp(int id)
         {
-            return this.users;
+            this.id = id;
         }
     }
 }
