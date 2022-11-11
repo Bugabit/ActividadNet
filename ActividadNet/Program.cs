@@ -11,11 +11,10 @@ bootcamp.AddUser(new User(2, "Carlos"));
 bootcamp.AddUser(new User(3, "Diego"));
 bootcamp.AddUser(new User(4, "Javi"));
 
-User bootcamp = new Bootcamp(4);
 
-app.MapGet("/bootcamp/{id}/", () => "Hello World!");
-app.MapGet("/", () => "Hello World!");
-app.MapGet("/", () => "Hello World!");
-app.MapGet("/", () => "Hello World!");
+app.MapGet("/bootcamp/{id}/people", () => "list");
+app.MapPost("/bootcamp/{id}/people", () => "create");
+app.MapDelete("/bootcamp/{id}/people/{id}", () => "delete");
+app.MapPut("/bootcamp/{id}/people/{id}", () => "update");
 
 app.Run();
